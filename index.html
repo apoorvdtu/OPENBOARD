@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Open Board</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <span class="tool-container ">
+        <div class="pencil">
+
+            <img src="./utilities/fountain-pen-svgrepo-com.svg" alt="" class="pencil1">
+        </div>
+        <div class="eraser">
+            <img src="./utilities/eraser-svgrepo-com.svg" alt="" class="eraser1">
+        </div>
+        <div class="notepad">
+            <img src="./utilities/note-svgrepo-com.svg" alt="" class="notepad1">
+
+        </div>
+        <div class="download">
+            <img src="./utilities/download-svgrepo-com.svg" alt="" class="download1">
+        </div>
+        <img src="/OPENBOARD/new.png" class = "cleanCanvas" height = "60px"alt="" srcset="">
+        <div class="size">
+            <div class="size1"></div>
+            <div class="size2"></div>
+            <div class="size3"></div>
+        </div>
+        <div class="color">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+        </div>
+    </span>
+
+    <div class="drawable">
+        
+        <canvas width="900" height="900"> </canvas>
+    </div>
+
+    <template id="pageTemplates">
+        <div class="sticky"  style="left: 200px;top: 150px;">
+            <div class="stickybar">
+                
+                <span action="minimize" class="material-icons"> visibility_off </span>
+                <span action="maximize" class="material-icons"> visibility </span>
+                <span action="close" class="material-icons">highlight_off </span>
+                <div class="stickymover"></div>
+
+            </div>
+            <textarea id="stickynote" cols="30" rows="10"></textarea>
+        </div>
+    </template>
+    <script src="index.js"></script>
+</body>
+
+</html>

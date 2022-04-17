@@ -1,0 +1,223 @@
+.body{
+    padding:90px;
+}
+.openclose{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    background-color: rosybrown;
+}
+.openclose:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color:lightgreen;
+}
+.drawable{
+    border: 10px lightgreen;
+    border-radius: 2px;
+    height: 800px;
+    display: block;
+    position: relative;
+}
+.drawable canvas,.sticky {
+    position: absolute;
+}
+canvas{
+    border:1px solid black;
+    cursor:crosshair;
+    /* height: 76%; */
+    /* font-size: small; */
+}
+.tool-container {
+    position: fixed;
+    display: flex;
+    margin:5px;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding:10px;
+    padding-top: 25px;
+    border-radius: 10px;
+    z-index: 34;
+    width: 80vw;
+    margin-left: 9vw;
+    /* height: 5vh; */
+    /* transform: scale(1.2); */
+    background-color: rgb(202, 241, 222);
+    box-shadow: 1px 1px 2px rgb(255, 243, 189), 0 0 25px rgb(255, 243, 189), 0 0 5px rgb(255, 243, 189);
+
+}
+.tool-container *
+{
+    cursor: pointer;
+}
+.size{
+    cursor: pointer;
+    justify-content: space-evenly;
+    display: flex;
+    border: 1px solid red;
+    height:25px;
+}
+.size1,.size2,.size3{
+    height: 8px;
+    width: 8px;
+    border-radius: 50% ;
+    /* margin-top: 6px; */
+    margin-left:10px;
+    margin-right:10px;
+    /* height:30px; */
+    cursor: pointer;
+}
+.size1{
+/* margin-top:15px; */
+margin-top: 8px;    
+background-color: black;
+}
+.size2{
+    height: 12px;
+    width: 12px;
+    margin-top: 6px;
+    background-color: black;
+}
+.size3{
+    height: 18px;
+    width: 18px;
+    margin-top: 4px;;
+    background-color: black;
+}
+
+#textArea{
+    background-color: rgb(231, 231, 231);
+    font-size: x-large;
+    /* margin-left: 30px; */
+    /* display: none; */
+}
+.bar{
+    display: flex;
+    margin-left:30px;
+    /* justify-content: safe; */
+}
+.remove{
+    cursor: pointer;
+    background-color: red;
+    height:30px;
+    width:30px;
+    border-color: red;
+    border:1px solid red;
+    border-radius: 50%;
+    margin: 3px;
+}
+.remove:hover,.hide:hover{
+    transform: scale(1.1);
+}
+.hide{
+
+    cursor: pointer;
+    margin: 3px;
+    border:1px solid rgb(255, 255, 0);
+    /* border-color: rgb(255, 255, 0); */
+    background-color: rgb(255, 255, 0);
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+}
+.color{
+    /* border-radius: 50%; */
+    justify-content: space-between;
+    border:3px solid red;
+    padding:1px;
+    /* width:100px; */
+    display: flex;
+    /* background-color: grey; */
+}
+.color1,.color2,.color3{
+    height: 35px;
+    width: 35px;
+    border-radius: 50% ;
+    margin-top: 6px;
+    margin-left:10px;
+    margin-right:10px;
+    cursor: pointer;
+}
+.color1{
+   
+    background-color: lightpink;
+}
+.color2{
+    background-color: lightgreen;
+}
+.color3{
+    background-color: black;
+}
+.pencil1{
+    cursor: pointer;
+    height:50px;
+}
+.eraser1{
+    cursor: pointer;
+    height:50px;
+}
+.notepad1{
+    cursor: pointer;
+    height:50px;
+}
+.download1{
+    cursor: pointer;
+    height:50px;
+}
+.stickybar
+{
+   
+    /* justify-content:left; */
+    display: flex;
+    /* width: 100px; */
+   padding-left: 10px;
+    /* margin-left: 100px; */
+    
+}
+.stickybar *
+{
+    cursor: pointer;
+}
+.stickymover{
+    cursor: grab;
+    background-color: rgb(255, 255, 255);
+    /* margin-left:60px; */
+    width: 230px;
+    /* height: 10px; */
+    color: white;
+    display: flex;
+    height: 24px;
+    border-radius: 50px;
+}
+.sticky{
+    left: 250px;
+    top: 250px;
+    border: 2px solid rgb(114, 14, 14);
+    padding: 1px;
+    border-radius: 5px;
+    position: absolute;
+    width: 310px;
+    height: auto;
+    box-shadow: 1px 1px 2px rgb(255, 243, 189), 0 0 25px rgb(255, 243, 189), 0 0 5px rgb(255, 243, 189);
+}
+#stickynote{
+
+    font-size: large;
+}
+
+[action="close"]
+{
+    color: red;
+    
+}
+[action="maximize"]
+{
+    color: rgb(0, 132, 255);
+}
+[action="minimize"]
+{
+    color: rgb(175, 175, 0);
+}
+.sticky{
+    z-index: 45;
+}
