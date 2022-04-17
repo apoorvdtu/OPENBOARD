@@ -67,7 +67,7 @@
             sticky.style.setProperty("left", ans);
             sticky.style.setProperty("top", ansy);
         }
-      
+
     }
 
     download.addEventListener("click", downloadHandler);
@@ -81,12 +81,16 @@
         if (!fileName) {
             return;
         }
-        let image = canvasBoard.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
-        let link = document.createElement('a');
-        link.download = fileName + ".png";
-        link.href = image;
-        link.click();
-        link.remove();
+        html2canvas(document.querySelector(".drawable")).then(canvas => {
+            let image = canvas.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
+            let link = document.createElement('a');
+            link.download = fileName + ".png";
+            link.href = image;
+            link.click();
+            link.remove();
+            // document.body.appendChild(canvas)
+        });
+
     }
     function eraserHandler() {
         tool.strokeStyle = "white";
