@@ -5,6 +5,7 @@ http://apoorvambavat.me/OPENBOARD/
 
 # A Custom OpenBoard 
 <br>
+
 ## Functionalities
 
 ### 1. 3 Different Colors for Writing
