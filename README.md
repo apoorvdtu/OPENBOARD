@@ -1,8 +1,11 @@
 # OPENBOARD
 ## Live Here : - 
 http://apoorvambavat.me/OPENBOARD/
-A Custom OpenBoard 
-Functionalities
+<br>
+
+# A Custom OpenBoard 
+<br>
+## Functionalities
 1. 3 Different Colors for Writing
 2. 3 Different Size of Pens
 3. Draggable NotePad
